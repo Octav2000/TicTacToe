@@ -5,6 +5,8 @@
 # / /  4
 # 01234
 
+import random as r
+
 def drawField(matrice):
     contor = 0
     for i in range(5):
@@ -56,7 +58,7 @@ def checkWinner(player, matrice):
                             return 2
 
 
-player = 1
+player = r.randint(1,2)
 matrice = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
 drawField(matrice)
 
