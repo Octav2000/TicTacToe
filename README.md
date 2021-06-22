@@ -1,18 +1,30 @@
 # TicTacToe
 Tic Tac Toe in Python
 
+CUM SE JOACA:
+
+- Se ruleaza TicTacToe.py
+- Se afiseaza a cui jucator este randul (1 cu X si 2 cu 0)
+- Se introduce linia pentru semn (0 - prima linie, 1 - a 2-a linie, 2 - a 3-a linie)
+- Se introduce coloana pentru semn (0 - prima coloana, 1 - a 2-a coloana, 2 - a 3-a coloana)
+- Dupa astea o sa se schimbe randul jucatorului
+
+EXPICARE COD:
+
 Pozitiile pentru X si 0 sunt retinute intr-o matrice de 3x3
 
-1) Metoda drawField()
+1) Metoda drawField():
+
 Se parcurge cu for de la 0 la 5 pentru a se putea desena "tabla". De asemenea, am mai luat un contor pentru liniile matricii care se incrementeaza atunci cand i-ul este par.
 Cand i este par atunci se afiseaza elementele matricii de pe linia contor si coloanele 0, 1 si 2. 
-Cand i este impar atunci se afiseaza doar mai multe - pentru a delimita liniile
+Cand i este impar atunci se afiseaza doar mai multe '-' (pentru a delimita liniile).
 
-2) Metoda checkWinner(player, matrice)
-In aceasta metoda se returneaza 0 daca un jucator a reusit sa castige, 1 daca mai sunt locuri libere unde se poate adauga sau 2 daca totul este ocupat si niciun jucator nu a reusit sa castige
-Acele if-uri verifica pentru toate liniile, coloanele si diagonalele matricii daca exista de 3 ori acelasi semn (daca sunt 3 de X sau 3 de 0) caz in care se returneaza 0 pentru castigator
+2) Metoda checkWinner(player, matrice):
 
-De la linia 59 pana la 61 se initializeaza jucatorul generand aleator intre 1 si 2 si dupa se deseneaza tabla
+In aceasta metoda se returneaza 0 daca un jucator a reusit sa castige, 1 daca mai sunt locuri libere unde se poate adauga sau 2 daca totul este ocupat si niciun jucator nu a reusit sa castige.
+Acele if-uri verifica pentru toate liniile, coloanele si diagonalele matricii daca exista de 3 ori acelasi semn (daca sunt 3 de X sau 3 de 0) caz in care se returneaza 0 pentru castigator.
+
+De la linia 59 pana la 61 se initializeaza jucatorul generand aleator intre 1 si 2 si dupa se deseneaza tabla.
 
 In bucla infinita (linia 66):
 - se citesc de la tastatura linia si coloana unde se doreste introducere urmatorului semn (X pentru jucatorul 1, 0 pentru jucatorul 2)
